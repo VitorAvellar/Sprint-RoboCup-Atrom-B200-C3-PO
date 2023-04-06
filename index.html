@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RoboCup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/icon.png">
+</head>
+
+<body class="bg-light">
+
+
+
+    <nav
+        class="fw-bold navbar navbar-expand-lg bg-light border border-dark border-opacity-25 border-start-0 border-end-0 border-top-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#robocup">Robo Cup 2022</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre o projeto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quem-somos">Quem somos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            O robô
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Visão geral</a></li>
+                            <li><a class="dropdown-item" href="#componentes">Componentes</a></li>
+                            <li><a class="dropdown-item" href="#funcionamento">Funcionamento</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <img src="./images/icon.png" class="rounded-circle" style="width: 2%;" alt="logotipo Machine Monsteres">
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1 class="text-center mt-5 mb-4">CONHEÇA O </h1>
+        <h1 class="text-center mb-5 main-title-text" id="sobre">Atrom B200 C3-PO</h1>
+
+        <p class="fs-2 text-center">Um dos <mark class="highlighter-title highlighted rounded"> top de linha</mark> da
+            Machine Monsters, agora <mark class="highlighter-title highlighted rounded">disponível</mark> para o
+            consumidor!</p>
+
+        <p class="fs-4 text-center fst-italic">"Um brinquedo genial e um robô companheiro. 10/10" IGN</p>
+        <p class="fs-4 text-center fst-italic">"Realmente um dos melhores da marca! Se superaram e muito! 9/10" Mãe do
+            criador</p>
+    </div>
+
+    <div class="row">
+
+
+        <div class="container col-md-3 col-10">
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./images/traseira.jpeg" class="d-block w-100 rounded" alt="visão da traseira do robô">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="fw-bold">Visão traseira</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/lateral.jpeg" class="d-block w-100 rounded" alt="visão da lateral esquerda do robô">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="fw-bold">Visão da lateral esquerda</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/lateral2.jpeg" class="d-block w-100 rounded" alt="visão da lateral direita do robô">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="fw-bold">Visão da lateral direita</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/frontal.jpeg" class="d-block w-100 rounded" alt="visão frontal do robô">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="fw-bold">Visão frontal</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/aerea.jpeg" class="d-block w-100 rounded" alt="visão aérea">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="fw-bold">Visão aérea</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-color-1 my-3 bg-dark">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <h1 id="funcionamento"
+                    class="text-center py-3 title-text border border-light border-opacity-25 border-start-0 border-end-0">
+                    Funcionamento</h1>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+
+                    <img src="./images/armas.png" class="col-12" alt="desenho explicando o funcionamento das armas do robô">
+                    <p class="fs-6 col-12 text-center">
+                        Imagem real mostrando como é o acionamento das armas, tendo em vista a rotação dos motores e a
+                        tragetória feita pelos palitos.
+                    </p>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <p class="fs-4 mt-3">O Atrom B200 C3-PO possui duas <mark
+                            class="highlighter highlighted rounded">armas retráteis</mark> , as quais são híper precisas
+                        e atendem seu propósito: estourar balões. Seus movimentos, extremamente rápidos, não dão chance
+                        alguma aos inimigos.
+                    </p>
+
+                    <p class="fs-4 mt-3">O piloto possui acesso a um controle o qual o permite locomover o robô por meio
+                        de um aplicativo de celular com conexão bluetooth. Adiante, é necessário fazer com que o sensor
+                        de toque seja ativado ao encostar em alguma superfície para que as armas sejam, por sua vez,
+                        ativadas.</p>
+
+                    <p class="fs-4 mt-3">O robô conta com um total de <mark
+                            class="highlighter highlighted rounded">quatro motores</mark>. Dois desses são acionados
+                        após um toque com os sensores presentes em sua frente. Já os restantes, são os das rodas -
+                        controlados por um aplicativo, possuindo as direções de frente / trás / esquerda / direita.</p>
+
+                    <p class="fs-4 mt-3">Os drivers (dois) controlam, cada um, dois motores. Ou seja, um está destinado
+                        para os motores das armas e o outro está para os das rodas.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div>
+
+        <h1 id="componentes"
+            class="text-center py-3 title-text border border-dark border-opacity-25 border-start-0 border-end-0">
+            Componentes</h1>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <p class="fs-4 text-center col-md-6">Para a confecção do Atrom, nossos designers passaram anos tentando
+                achar um balanceamento perfeito entre <mark class="highlighter highlighted rounded">precisão, agilidade,
+                    mobilidade e eficiência</mark>. Para tal, os principais recursos utilizados na fabricação foram:</p>
+
+            <ul class="list-group list-group-flush col-md-6 bg-light">
+                <li class="list-group-item bg-light">• Arduino UNO</li>
+                <li class="list-group-item bg-light">• (2x) Ponte H</li>
+                <li class="list-group-item bg-light">• Madeira MDF</li>
+                <li class="list-group-item bg-light">• Dispositivo bluetooth arduino</li>
+                <li class="list-group-item bg-light">• Pilhas AAA Duracell</li>
+                <li class="list-group-item bg-light">• (2x) Motores p/ arduino</li>
+            </ul>
+
+        </div>
+
+        <div class="row">
+
+            <img class="img-fluid col-lg-2 col-md-4 col-sm-6 col-6" src="./images/arduino.png" alt="arduino UNO">
+
+            <img class="img-fluid col-lg-2 col-md-4 col-sm-6 col-6" src="./images/ponte.png" alt="ponte H driver">
+
+            <img class="img-fluid col-lg-2 col-md-4 col-sm-6 col-6" src="./images/madeira.png" alt="madeira MDF">
+
+            <img class="img-fluid col-lg-2 col-md-4 col-sm-6 col-6" src="./images/bluetooth.png" alt="dispositivo bluetooth">
+
+            <img class="img-fluid col-lg-2 col-md-4 col-sm-6 col-6" src="./images/pilhas.png" alt="pacote de 6 pilhas duracell">
+
+            <img class="img-fluid col-lg-2 col-md-4 col-sm-6 col-6" src="./images/motor.png" alt="motor das rodas do robô">
+
+        </div>
+
+    </div>
+
+    <div class="bg-color-1 my-3 bg-dark pb-4">
+
+
+        <div>
+
+            <h1 id="quem-somos"
+                class="text-center py-3 title-text border border-light border-opacity-25 border-start-0 border-end-0">
+                Quem
+                somos?</h1>
+
+        </div>
+
+        <div class="container">
+
+            <p class="fs-4 text-center">Nossa equipe é composta pelos mais bem capacitados profissionais no tocante à
+                robótica.</p>
+
+            <div class="row">
+
+                <img src="./images/foto1.png" class="rounded-circle col-lg-3 col-md-6 col-sm-4 col-6 my-2" alt="Imagem do integrante Eduardo Lucca">
+                <img src="./images/foto2.png" class="rounded-circle col-lg-3 col-md-6 col-sm-4 col-6 my-2" alt="Imagem do integrante Eduardo Souza">
+                <img src="./images/foto3.png" class="rounded-circle col-lg-3 col-md-6 col-sm-4 col-6 my-2" alt="Imagem do integrante Lucas Dias">
+                <img src="./images/foto4.png" class="rounded-circle col-lg-3 col-md-6 col-sm-4 col-6 my-2" alt="Imagem do integrante Vitor Avellar">
+
+            </div>
+
+            <p class="fs-5 text-center">A nossa StartUp é formada por quatro jovens geniais e empreendedores. Visamos, primordialmente, a <mark class="highlighter highlighted rounded">experiência do usuário</mark>.</p>
+        </div>
+
+    </div>
+
+    <div class="my-3">
+
+        <h1 id="robocup"
+            class="text-center py-3 title-text border border-dark border-opacity-25 border-start-0 border-end-0">
+            A RoboCup
+        </h1>
+
+        <div class="container">
+
+            <div class="row mt-3">
+
+
+                <div class="col-md-12 col-lg-6 mb-3">
+
+
+                    <div class="card text-center bg-dark text-light px-2" style="width: 100%;">
+                        <img src="./images/next.png" class="card-img-top rounded mt-3" alt="porta do Evento NEXT">
+                        <div class="card-body">
+                            <h5 class="fw-bold fs-2">O <span class="next-color"> NEXT</span></h5>
+                            <p class="card-text fw-normal fs-4">Festival NEXT onde será sediada a RoboCup</p>
+                            <a href="https://www.youtube.com/watch?v=MwBEJiPyLwg&ab_channel=FIAP" target="_blank"
+                                class="btn btn-light fw-bold">Assista ao vídeo</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div
+                    class="col-12 col-md-12 col-lg-6 text-center border border-top-0 border-end-0 border-bottom-0 border-dark border-opacity-25">
+
+                    <p class="fs-4 tex-center">O evento da RoboCup 2022 será sediado no <mark class="highlighter highlighted rounded">festival NEXT da FIAP</mark>. Nesse,
+                        diversos grupos apresentarão os trabalhos que, durante o ano inteiro, tanto batalharam para
+                        finalizar.</p>
+
+                    <p class="fs-4 text-center">Ao lado, você poderá ver um vídeo da edição de 2019 do evento e, até
+                        mesmo, observar como serão as competições dos robôs.</p>
+
+                    <p class="fs-4 text-center">Sendo um evento de tecnologia e inovação promovido por jovens, o NEXT é
+                        um dos festivais mais interessantes para quem se afina nos assuntos de <mark class="highlighter highlighted rounded">tech e
+                        empreendedorismo</mark>.</p>
+
+                    <p class="fs-4 text-center">Após uma parada na anualidade do evento por conta da pandemia, ele
+                        volta no ano de 2022 para os alunos da faculdade, professores e convidados.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="bg-color-1 my-3 bg-dark">
+
+
+        <div>
+
+            <h1 id="videos"
+                class="text-center py-3 title-text border border-light border-opacity-25 border-start-0 border-end-0">
+                Vídeos</h1>
+
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <h3 class="text-center col-12">Abaixo, dois vídeos mostrando o trabalho duro de nossos exímios
+                    produtores, dedicando <mark class="highlighter highlighted rounded">tudo de si</mark> para oferecer o melhor a <mark class="highlighter highlighted rounded">você</mark>.</h2>
+
+                    <iframe class="rounded col-md-6 my-3" width="500" height="500"
+                        src="https://www.youtube.com/embed/30TzmyRyAvs" title="Atrom - 1" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <iframe class="rounded col-md-6 my-3" width="500" height="500"
+                        src="https://www.youtube.com/embed/TnmP6ZK_pqI" title="Atrom - 2" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+
+        <h1 id="" class="text-center py-3 title-text border border-dark border-opacity-25 border-start-0 border-end-0">
+            O <span
+                class="border border-dark border-opacity-50 border-start-0 border-end-0 border-top-0">Diferencial</span>
+        </h1>
+
+    </div>
+
+    <div class="container pb-5">
+
+
+        <h1 class="my-5">Por que comprar o Atrom? Simples!</h1>
+
+        <div class="accordion fs-4" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button fs-3 bg-dark next-color" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Exímio atendimento
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+
+                        <h3 class="border border-light border-opacity-25 border-start-0 border-end-0 border-top-0 pb-3">
+                            Observe a seguir um diálogo <mark class="highlighter highlighted rounded">real</mark> entre nosso centro de antendimento com Maria, uma de nossas
+                            consumidoras:</h3>
+
+                        <p class="fs-4">Maria - Olá, gostaria de ver alguns robôs educacionais.</p>
+                        <p class="fs-4">Machine monsters - Olá tudo bem? Vamos lhe apresentar alguns modelos.</p>
+                        <p class="fs-4">Machine monsters - Qual seria a idade da pessoa que vai utilizar o robô?</p>
+                        <p class="fs-4">Maria – Seria para o meu filho ele tem 11 anos.</p>
+                        <p class="fs-4">Machine monsters – Legal! Temos o atrom b50 C1-PO, esse robô vai ajudar ele nas
+                            lições de casa.</p>
+                        <p class="fs-4">Maria – Nossa, muito interessante. Mas eu queria algo mais completo, algo que
+                            ele possa usar até com mais idade.</p>
+                        <p class="fs-4">Machine monsters – Para uma versão mais completa temos o ATROM B200 C3-PO, o
+                            nosso <mark class="highlighter highlighted rounded">melhor robô educacional</mark> !</p>
+                        <p class="fs-4">Maria – Mas o que ele contém? </p>
+                        <p class="fs-4">Machine monsters – Ele, <mark class="highlighter highlighted rounded">além de ajudar nos deveres de casa</mark>, é um <mark class="highlighter highlighted rounded">grande portal de jogos educativos</mark>. Além disso, vem com diversas <mark class="highlighter highlighted rounded">videoaulas</mark> sobre as mais variadas áreas
+                            do conhecimento.</p>
+                        <p class="fs-4">Maria – Gostei! Quanto que custa?</p>
+                        <p class="fs-4">Machine monsters – Esse está ficando no valor de <mark class="highlighter highlighted rounded">R$694,20</mark>.</p>
+                        <p class="fs-4">Maria – Ok, vocês parcelam em quantas vezes?</p>
+                        <p class="fs-4">Machine monsters – Parcelamos em até 11 vezes sem juros!</p>
+                        <p class="fs-4">Maria – Vou querer no crédito, em 5 vezes por favor.</p>
+                        <p class="fs-4">Machine monsters – Tudo bem, pedido concluído. Obrigado e volte sempre!</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed fs-3 bg-dark next-color" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        A crescente no mercado de robôs
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <h4 class="col-12">É de suma importância o crescimento do mercado de robótica para o
+                                cliente. Não só isso, como também é extremamente notório que se atente em <mark class="highlighter highlighted rounded">quem será destinado seu dinheiro</mark>.</h4>
+                            <h4 class="col-12">Logo, a Machine Monsters é a única empresa capaz de mostrar ao
+                                consumidor <mark class="highlighter highlighted rounded">qualidade e confiança</mark> em preços acessíveis.</h4>
+                            <h4 class="col-12 mb-3">Dito isso, observa-se uma constante evolução exponencial no
+                                mercado de robôs educacionais, como podemos ver no gráfico abaixo:</h4>
+                            <img src="./images/grafico1.png" class="rounded col-12 col-md-6" style="width: 90%;" alt="gráfico sobre investimento em robôs ao redor do mundo">
+
+                            <span
+                                class="border border-light border-opacity-25 border-start-0 border-end-0 border-top-0 mt-3"></span>
+
+                            <h4 class="col-12 mt-2">O mercado de robôs educacionais deverá <mark class="highlighter highlighted rounded">crescer de US$
+                                1,3 Bilhões para US$ 3,1 bilhões em 2025</mark>, somente em equipamentos. Também é
+                                um mercado muito estável, uma vez que a China é líder de 60% do mercado.</h4>
+                            <img src="./images/grafico2.png" class="rounded col-12 col-md-6" style="width: 90%;" alt="Notícia diz que China se prepara">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed fs-3 bg-dark next-color" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Demanda
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+
+                        <h4 class="col-12">Ao analisar os dados abaixo, observam-se valores para ambos R²'s próximos a 1,
+                            ou seja, o gráfico apresenta uma <mark class="highlighter highlighted rounded">acurácia alta</mark>, dada a tendência de crescimento mostrada.
+                        </h4>
+
+                        <img src="./images/grafico3.png" class="rounded col-12 col-md-6" style="width: 90%;" alt="análise da demanda anual por robôs industriais">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bg-color-1 my-3 bg-dark">
+
+
+        <div>
+
+            <h1 id="contato"
+                class="text-center py-3 title-text border border-light border-opacity-25 border-start-0 border-end-0">
+                Contate-nos</h1>
+
+        </div>
+
+        <div class="container pb-5">
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label fs-4">Digite seu e-mail</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Ex.: seuemail@email.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label fs-5">Mensagem</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Nos dê seu feedback!"></textarea>
+            </div>
+
+            <button class="btn btn-dark btn-outline-light border">Enviar</button>
+
+        </div>
+
+    </div>
+
+    <footer id="myFooter" class="bg-light fs-5">
+        <div class="container">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#funcionamento">Funcionamento</a></li>
+                <li><a href="#robocup">A RoboCup</a></li>
+            </ul>
+            <p class="footer-copyright">© 2022 Copyright - Machine Monsters</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main-title-text{
+    font-size: 600%;
+    transition: .3s;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-title-text:hover{
+    color: #DA3560;
+}
+
+.title-text{
+    font-size: 3rem;
+}
+
+.bg-color-1{
+    color: #F8F9FA;
+}
+
+.highlighter-title{
+    background-image: linear-gradient(90deg,rgba(255,255,255,0) 50%,var(--text-highlight-color,#da356149) 0);
+    background-size: 200%;
+    transition: background-position 2s;
+}
+
+.highlighter-title.highlighted{
+    background-position: -100%;
+    background-color: transparent;
+}
+
+.highlighter{
+    background-color: #da35615b;
+}
+
+.next-color{
+    color: #DA3560;
+}
+
+#myFooter{
+    padding-top:32px;
+}
+
+#myFooter .container{
+    text-align: center;
+}
+
+#myFooter .footer-copyright{
+    margin-bottom: 35px;
+    text-align: center;
+    color: #777;
+}
+
+#myFooter ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+#myFooter a{
+    color: #282b2d;
+    font-size: 18px;
+}
+
+#myFooter li{
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 2;
+}
+
+#myFooter .fa{
+    font-size: 36px;
+    margin-right: 15px;
+    margin-left: 20px;
+    border-radius: 51%;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 43px;
+    text-decoration: none;
+    transition:color 0.2s;
+}
